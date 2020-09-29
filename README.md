@@ -8,7 +8,7 @@
 
 This scripts get a list of KO and Reactions from a 16S dataset, using different values of threeshold when computing the microbiome OTUs core
 
-## TaxFun
+## TaxFun.R
 
 This script is used to analyze our dataset with Taxa4Fun
 
