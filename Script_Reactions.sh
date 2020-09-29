@@ -18,7 +18,7 @@ sh Prueba.sh # This script transform out table into reactions, using the KO data
 paste All_table_normKO.tab.txt TaxNa.txt > All_table_normKOtaxNa.txt #Here we paste a column with NA info where we should have the taxonomy info, but we are not using it
 biom convert -i All_table_normKOtaxNa.txt -o All_table_normKOtax.tab_hdf5.biom --table-type="OTU table" --to-hdf5 --process-obs-metadata taxonomy #We transform back our table into a biom table
 
-## Calcular el core
+## Core calc
 
 compute_core_microbiome.py -i All_table_normKOtax.tab_hdf5.biom -o All_table_normKO_core100 --min_fraction_for_core 1 #With this script we calculate the minimun core fraction, and we can change that value from 0.5 to 1 (50-100%)
 
